@@ -1,38 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" dir="1tr"> 
-    <head> 
-        <meta charset="utf-8"> 
-        <title>Collections Log</title>
-         
-    </head>
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="stylesheet" type="text/css" href="styles/style.css">
+    <title>Collections App</title>
+
+    </head> 
     <body> 
-        <header>
-            <h2>Collections Log</h2>
-        </header>
-    
-        <main> 
-            <h3> Start a new collection</h3>
-            <div class="new_collection_container" id="collection_form">
-
-
-            </div> 
-
-            <h3> Here are your collections!</h3>
-
-
-
-
-            <div class="container" id="collections-container">
-
-
-                
+        <div class="container"> 
+            <h1>Collections Showcase</h1>
+            <div id="new-collection-container">
+            <form id="new-collection-form"> 
+                <label>Title:</label>
+                <input type="text" name="Title"  /> <br>
+                <label>Description:</label>
+                <input type="text" name="Description" /><br>
+                <label>Total Worth:</label>
+                <input type="text" name="Total_worth" /><br>
+                <input type="submit" value="Create Collection" style="background-color:orange" /> 
+            </form>
             </div>
-            <div id="items-container">
+            <div id="collections-container"> 
 
             </div>
-        </main>
-     <script src="src/collection.js"></script>
-     <script src="src/item.js"></script>   
-     <script src="src/index.js"></script>        
+        </div>
+        <script src="src/components/collections.js"></script>
+        <script src="src/components/app.js"></script>
+        <script src="src/adapters/CollectionsAdapter.js"></script>
+        <script src="src/index.js"></script>
     </body>
+
 </html>
